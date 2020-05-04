@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">PlatziConf</string>
+
+    <string name="inicio_frag_tv_que_es">¿Qué es PlatziConf?</string>
+    <string name="inicio_frag_tv_que_es_resp">Platzi una vez más, cómo todos los años, hace el evento más grande de comunidad tecnológica en los que apasionados por aprender, emprender e innovar se encuentran en un mismo lugar para escuchar a expertos de la industria que durante horas comparten su conocimiento.</string>
+    <string name="inicio_frag_tv_por_que">¿Por qué asistir?</string>
+    <string name="inicio_frag_tv_por_que_resp">Porque esto solo sucede una vez cada año.
+Porque en America Latina la PlatziConf es el único evento de la industria tecnológica que reúne a profesionales de altísimo nivel en un solo lugar.
+Porque en este evento conocerás personas que en el futuro pueden ser tus amigos, tus colegas, tus colaboradores y hasta tus socios.
+Porque en esta versión todo girará al rededor de la pregunta: ¿Qué habilidades hacen a un gran profesional y lo preparan para los trabajos del futuro? y juntos responderemos lo que esto significa.</string>
+    <string name="inicio_frag_tv_info">Información de la PlatziConf México 2019</string>
+    <string name="inicio_frag_tv_info_resp">
+        \u0009 &#8226; Es un evento exclusivo para estudiantes con suscripción activa en Platzi.\n
+        \u0009 &#8226; (Sí esto te apasiona y no tienes una suscripción activa, adquiere ya mismo tu Plan Expert).\n
+        \u0009 &#8226; Fecha: Sábado 3 de Agosto de 2019.\n
+        \u0009 &#8226; Lugar: Centro Cultural Roberto Cantoral.\n
+        \u0009 &#8226; Dirección: Puente Xoco s/n, Xoco, 03330 Ciudad de México, CDMX.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

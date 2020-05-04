@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="altoLogoPlatzi">45dp</dimen>
+    <dimen name="toolbarAlto">30dp</dimen>
+    <dimen name="cardCornerRadius">4dp</dimen>
+    <dimen name="altoImageViewHome">175dp</dimen>
+
+    <dimen name="tamanioTitulo">20sp</dimen>
+    <dimen name="marginHomeSubtitulo">10dp</dimen>
+    <dimen name="tamanioSubtitulo">15sp</dimen>
+
+    <dimen name="itemScheduleTitulo">30sp</dimen>
+    <dimen name="itemScheduleSubTitulo">20sp</dimen>
+</resources>

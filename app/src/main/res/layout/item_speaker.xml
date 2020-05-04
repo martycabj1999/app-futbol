@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/cardCornerRadius"
+    app:cardElevation="4dp"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/tvItemSpeakerImage"
+            android:layout_width="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/altoImageViewHome"
+            android:src="@mipmap/ic_launcher"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/tvItemSpeakerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre Expositor"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/tamanioTitulo"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/tvItemSpeakerWork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trabajo Expositor"
+            android:textSize="@dimen/tamanioSubtitulo"
+            android:textColor="@color/colorAccent"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
