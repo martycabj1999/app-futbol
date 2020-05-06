@@ -5,7 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.platzi.conf.model.Conference
+import com.platzi.conf.model.Equipo
 import com.platzi.conf.R
 import com.platzi.conf.view.ui.fragments.ScheduleFragment
 import java.text.SimpleDateFormat
@@ -14,14 +14,14 @@ import kotlin.collections.ArrayList
 
 class ScheduleAdapter(val scheduleListener: ScheduleFragment) : RecyclerView.Adapter<ScheduleAdapter.ViewHolder>() {
 
-    var listConference = ArrayList<Conference>()
+    var listConference = ArrayList<Equipo>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_schedule, parent, false))
 
     override fun getItemCount() = listConference.size
 
     override fun onBindViewHolder(holder: ScheduleAdapter.ViewHolder, position: Int) {
-        val conference = listConference[position] as Conference
+        val conference = listConference[position] as Equipo
 
         holder.tvConferenceName.text = conference.title
         holder.tvConferenceSpeaker.text = conference.speaker
@@ -43,7 +43,7 @@ class ScheduleAdapter(val scheduleListener: ScheduleFragment) : RecyclerView.Ada
 
     }
 
-    fun updateData(data: List<Conference>) {
+    fun updateData(data: List<Equipo>) {
         listConference.clear()
         listConference.addAll(data)
         notifyDataSetChanged()

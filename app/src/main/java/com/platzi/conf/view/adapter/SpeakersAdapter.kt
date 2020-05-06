@@ -8,12 +8,12 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.platzi.conf.model.Speaker
+import com.platzi.conf.model.Torneo
 import com.platzi.conf.R
 
 class SpeakersAdapter(val speakerListener: SpeakersListener) : RecyclerView.Adapter<SpeakersAdapter.ViewHolder>() {
 
-    private var listSpeakers = ArrayList<Speaker>()
+    private var listSpeakers = ArrayList<Torneo>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_speaker, parent, false))
 
@@ -21,7 +21,7 @@ class SpeakersAdapter(val speakerListener: SpeakersListener) : RecyclerView.Adap
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-        val speaker = listSpeakers[position] as Speaker
+        val speaker = listSpeakers[position] as Torneo
         holder.tvSpeakerName.text = speaker.name
         holder.tvSpeakerWork.text = speaker.workplace
 
@@ -36,7 +36,7 @@ class SpeakersAdapter(val speakerListener: SpeakersListener) : RecyclerView.Adap
 
     }
 
-    fun updateData(data: List<Speaker>) {
+    fun updateData(data: List<Torneo>) {
         listSpeakers.clear()
         listSpeakers.addAll(data)
         notifyDataSetChanged()

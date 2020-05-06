@@ -8,13 +8,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 
 import com.platzi.conf.R
-import com.platzi.conf.model.Speaker
+import com.platzi.conf.model.Torneo
 import com.platzi.conf.view.adapter.SpeakersAdapter
 import com.platzi.conf.view.adapter.SpeakersListener
 import com.platzi.conf.viewmodel.SpeakersViewModel
@@ -48,7 +47,7 @@ class SpeakersFragment : Fragment() , SpeakersListener {
     }
 
     fun observeViewModel() {
-        viewModel.listSpeaker.observe(viewLifecycleOwner, Observer<List<Speaker>> { speakers ->
+        viewModel.listSpeaker.observe(viewLifecycleOwner, Observer<List<Torneo>> { speakers ->
             speakers.let {
                 speakerAdapter.updateData(speakers)
             }
@@ -60,12 +59,12 @@ class SpeakersFragment : Fragment() , SpeakersListener {
         })
     }
 
-    override fun onConferenceClicked(conference: Speaker, position: Int) {
+    override fun onConferenceClicked(conference: Torneo, position: Int) {
 
     }
 
 
-    override fun onSpeakerClicked(speaker: Speaker, position: Int) {
+    override fun onSpeakerClicked(speaker: Torneo, position: Int) {
         var bundle = bundleOf("speaker" to speaker)
         findNavController().navigate(R.id.SpeakersDetailFragmentDialog, bundle)
     }

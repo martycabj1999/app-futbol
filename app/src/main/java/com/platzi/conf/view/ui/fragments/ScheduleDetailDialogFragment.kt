@@ -4,7 +4,7 @@ package com.platzi.conf.view.ui.fragments
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
-import com.platzi.conf.model.Conference
+import com.platzi.conf.model.Equipo
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -45,7 +45,7 @@ class ScheduleDetailDialogFragment : DialogFragment() {
             dismiss()
         }
 
-        val conference = arguments?.getSerializable("conference") as Conference
+        val conference = arguments?.getSerializable("conference") as Equipo
         toolbarConference.title = conference.title
 
         tvItemScheduleTituloConferencia.text = conference.title
