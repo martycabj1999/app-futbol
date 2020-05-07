@@ -12,15 +12,16 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 
 import com.platzi.conf.R
-import com.platzi.conf.model.Equipo
+import com.platzi.conf.model.Conference
 import com.platzi.conf.view.adapter.ScheduleAdapter
+import com.platzi.conf.view.adapter.ScheduleListener
 import com.platzi.conf.viewmodel.ScheduleViewModel
 import kotlinx.android.synthetic.main.fragment_schedule.*
 
 /**
  * A simple [Fragment] subclass.
  */
-class ScheduleFragment : Fragment() {
+class ScheduleFragment : Fragment(), ScheduleListener {
 
     private lateinit var scheduleAdapter: ScheduleAdapter
     private lateinit var viewModel: ScheduleViewModel
@@ -45,7 +46,7 @@ class ScheduleFragment : Fragment() {
     }
 
     fun observeViewModel() {
-        viewModel.listSchedule.observe(this, Observer<List<Equipo>> { schedule ->
+        viewModel.listSchedule.observe(this, Observer<List<Conference>> { schedule ->
             scheduleAdapter.updateData(schedule)
         })
 
@@ -55,10 +56,11 @@ class ScheduleFragment : Fragment() {
         })
     }
 
-    fun onConferenceClicked(conference: Equipo, position: Int) {
-        val bundle = bundleOf("conference" to conference)
-        findNavController().navigate(R.id.scheduleDetailFragmentDialog, bundle)
+    override fun onConferenceClicked(conference: Conference, position: Int) {
+            val bundle = bundleOf("conference" to conference)
+            findNavController().navigate(R.id.scheduleDetailFragmentDialog, bundle)
     }
+
 
 }
 

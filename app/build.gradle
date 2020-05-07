@@ -38,6 +38,8 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
 
     implementation 'com.google.firebase:firebase-firestore:21.4.3'
+    implementation 'com.google.firebase:firebase-core:9.6.1'
+
 
     implementation 'androidx.navigation:navigation-fragment-ktx:2.2.2'
     implementation 'androidx.navigation:navigation-ui-ktx:2.2.2'
@@ -50,3 +52,5 @@ dependencies {
     implementation 'com.google.android.gms:play-services-maps:16.1.0'
 
 }
+
+apply plugin: 'com.google.gms.google-services'

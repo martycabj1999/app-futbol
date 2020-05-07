@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_margin="5dp">
+        android:layout_margin="10dp">
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -19,59 +21,67 @@
                 android:id="@+id/tvItemScheduleHour"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="left|bottom"
                 android:text="00:00"
-                android:gravity="right|bottom"
-                android:textSize="@dimen/itemScheduleTitulo"
                 android:textColor="@color/colorAccent"
-                android:textStyle="bold"/>
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/tvItemScheduleAMPM"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="left|top"
                 android:text="A.M."
-                android:gravity="right|top"
-                android:textSize="@dimen/itemScheduleSubTitulo"
-                android:textColor="@color/colorPrimary" />
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="2dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:layout_weight="3"
-            android:orientation="vertical"
-            android:layout_marginLeft="10dp">
+            android:orientation="vertical">
+
             <TextView
                 android:id="@+id/tvItemScheduleConferenceName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nombre de la conferencia"
-                android:textSize="20sp"
-                android:textColor="@color/colorPrimaryDark"
                 android:ellipsize="end"
-                android:lines="1"/>
+                android:lines="1"
+                android:text="Nombre de la conferencia"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
             <TextView
                 android:id="@+id/tvItemScheduleConferenceSpeaker"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Speaker name"
-                android:textSize="15sp"
-                android:textColor="@color/colorPrimary"
                 android:ellipsize="end"
-                android:lines="1"/>
+                android:lines="1"
+                android:text="Speaker name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
             <TextView
                 android:id="@+id/tvItemScheduleTag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tag"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape_topico"
                 android:ellipsize="end"
                 android:lines="1"
+                android:text="Tag"
                 android:textColor="#FFFFFF"
-                android:background="@drawable/shape_topico"/>
+                android:textSize="11sp" />
         </LinearLayout>
     </LinearLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/colorAccent"/>
+        android:background="@color/colorAccent" />
+
 </LinearLayout>

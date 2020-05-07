@@ -67,7 +67,7 @@ class UbicationFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClic
     }
 
     override fun onMarkerClick(p0: Marker?): Boolean {
-        findNavController().navigate(R.id.UbicationDetailFragmentDialog)
+        findNavController().navigate(R.id.ubicationDetailFragmentDialog)
         return true
     }
 

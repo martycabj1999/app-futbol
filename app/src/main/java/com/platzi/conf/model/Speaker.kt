@@ -4,7 +4,7 @@ import java.io.Serializable
 
 class Speaker: Serializable {
     var name = ""
-    var jobTitle = ""
+    var jobtitle = ""
     var workplace = ""
     var biography = ""
     var twitter = ""

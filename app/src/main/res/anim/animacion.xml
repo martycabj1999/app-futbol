@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
-
     <alpha
         android:fromAlpha="0.0"
         android:toAlpha="1.0"
@@ -8,16 +7,14 @@
         android:duration="500"
         android:repeatMode="reverse"
         android:repeatCount="4"/>
-        <scale
-            android:duration="500"
-            android:pivotX="50%"
-            android:pivotY="50%"
-            android:repeatMode="reverse"
-            android:repeatCount="4"
-            android:toXScale="110%"
-            android:toYScale="110%"
-            android:fromXScale="100%"
-            android:fromYScale="100%"
-        />
-
+    <scale
+        android:duration="500"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:repeatMode="reverse"
+        android:repeatCount="4"
+        android:toXScale="110%"
+        android:toYScale="110%"
+        android:fromXScale="100%"
+        android:fromYScale="100%"/>
 </set>

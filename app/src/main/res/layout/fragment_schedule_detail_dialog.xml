@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
-    <ScrollView
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <LinearLayout
@@ -40,9 +40,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Titulo de la conferencia"
-                        android:textSize="30sp"
+                        android:textSize="25sp"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
+                        android:layout_margin="20dp"
                         android:gravity="center_horizontal"
                         android:layout_centerInParent="true"/>
                 </RelativeLayout>
@@ -52,13 +53,13 @@
                     android:layout_height="wrap_content"
                     app:cardCornerRadius="4dp"
                     app:cardElevation="1dp"
-                    android:layout_margin="15dp"
-                    android:background="@drawable/shape_parrafo">
+                    android:layout_margin="15dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:padding="10dp">
+                        android:padding="10dp"
+                        android:background="@drawable/shape_parrafo">
                         <TextView
                             android:id="@+id/tvDetailConferenceHour"
                             android:layout_width="match_parent"
@@ -73,20 +74,22 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Nombre Expositor"
-                            android:textSize="20sp"
+                            android:textSize="25sp"
                             android:textStyle="bold"
                             android:textColor="@color/colorPrimary"
                             android:gravity="center_horizontal"
                             android:layout_margin="5dp"/>
                         <TextView
                             android:id="@+id/tvDetailConferenceTag"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Tag"
+                            android:layout_gravity="center_horizontal"
                             android:textSize="12sp"
-                            android:textColor="@color/colorPrimary"
+                            android:textColor="#FFF"
                             android:gravity="center_horizontal"
-                            android:layout_margin="5dp"/>
+                            android:layout_margin="5dp"
+                            android:background="@drawable/shape_topico"/>
 
                         <TextView
                             android:id="@+id/tvDetailConferenceDescription"
