@@ -50,7 +50,7 @@
 
     <dialog
         android:id="@+id/speakersDetailFragmentDialog"
-        android:name="com.platzi.conf.view.ui.fragments.SpeakersDetailDialogFragment"
+        android:name="com.platzi.conf.view.ui.fragments.SpeakersDetailFragmentDialog"
         android:label="SpeakerDetailFragmentDialog"
         tools:layout="@layout/fragment_speakers_detail_dialog"/>
 

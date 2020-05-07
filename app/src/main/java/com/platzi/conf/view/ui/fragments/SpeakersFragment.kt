@@ -24,8 +24,8 @@ import kotlinx.android.synthetic.main.fragment_speakers.*
  */
 class SpeakersFragment : Fragment() , SpeakersListener {
 
-    lateinit var speakerAdapter: SpeakersAdapter
-    lateinit var viewModel: SpeakersViewModel
+    private lateinit var speakerAdapter: SpeakersAdapter
+    private lateinit var viewModel: SpeakersViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_speakers, container, false)

@@ -10,8 +10,9 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.platzi.conf.model.Speaker
 import com.platzi.conf.R
+import com.platzi.conf.view.ui.fragments.SpeakersFragment
 
-class SpeakersAdapter(val speakerListener: SpeakersListener) : RecyclerView.Adapter<SpeakersAdapter.ViewHolder>() {
+class SpeakersAdapter(val speakerListener: SpeakersFragment) : RecyclerView.Adapter<SpeakersAdapter.ViewHolder>() {
 
     private var listSpeakers = ArrayList<Speaker>()
 
@@ -20,8 +21,8 @@ class SpeakersAdapter(val speakerListener: SpeakersListener) : RecyclerView.Adap
     override fun getItemCount() = listSpeakers.size
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-
         val speaker = listSpeakers[position] as Speaker
+
         holder.tvSpeakerName.text = speaker.name
         holder.tvSpeakerWork.text = speaker.workplace
 
