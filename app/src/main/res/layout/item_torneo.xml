@@ -17,24 +17,14 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tvItemScheduleHour"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="left|bottom"
-                android:text="00:00"
-                android:textColor="@color/colorAccent"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/tvItemScheduleAMPM"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="left|top"
-                android:text="A.M."
-                android:textColor="@color/colorPrimary"
-                android:textSize="15sp" />
+            <ImageView
+                android:id="@+id/ivItemTorneoImage"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="1dp"
+                android:layout_marginTop="1dp"/>
 
         </LinearLayout>
 
@@ -46,27 +36,17 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tvItemScheduleConferenceName"
+                android:id="@+id/tvItemTorneoName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:lines="1"
-                android:text="Nombre de la conferencia"
+                android:text="Nombre de la equipo"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/tvItemScheduleConferenceSpeaker"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ellipsize="end"
-                android:lines="1"
-                android:text="Speaker name"
-                android:textColor="@color/colorPrimary"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/tvItemScheduleTag"
+                android:id="@+id/tvItemTorneoPuntos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"

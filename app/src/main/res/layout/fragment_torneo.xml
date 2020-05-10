@@ -3,15 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.ui.fragments.ScheduleFragment">
+    tools:context=".view.ui.fragments.TorneoFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvSchedule"
+        android:id="@+id/rvTorneo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
     <RelativeLayout
-        android:id="@+id/rlBaseSchedule"
+        android:id="@+id/rlBaseTorneo"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <View

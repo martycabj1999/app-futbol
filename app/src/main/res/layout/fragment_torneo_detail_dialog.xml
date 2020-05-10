@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Toolbar
-            android:id="@+id/toolbarConference"
+            android:id="@+id/toolbarTorneo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </com.google.android.material.appbar.AppBarLayout>
@@ -36,7 +36,7 @@
                         android:background="@color/colorPrimary"
                         android:alpha="0.5"/>
                     <TextView
-                        android:id="@+id/tvItemScheduleTituloConferencia"
+                        android:id="@+id/tvItemTorneoTituloConferencia"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Titulo de la conferencia"
@@ -61,7 +61,7 @@
                         android:padding="10dp"
                         android:background="@drawable/shape_parrafo">
                         <TextView
-                            android:id="@+id/tvDetailConferenceHour"
+                            android:id="@+id/tvDetailTorneoHour"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="00:00"
@@ -70,7 +70,7 @@
                             android:gravity="center_horizontal"
                             android:layout_margin="5dp"/>
                         <TextView
-                            android:id="@+id/tvDetailConferenceSpeaker"
+                            android:id="@+id/tvDetailTorneoSpeaker"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Nombre Expositor"
@@ -80,7 +80,7 @@
                             android:gravity="center_horizontal"
                             android:layout_margin="5dp"/>
                         <TextView
-                            android:id="@+id/tvDetailConferenceTag"
+                            android:id="@+id/tvDetailTorneoTag"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Tag"
@@ -92,7 +92,7 @@
                             android:background="@drawable/shape_topico"/>
 
                         <TextView
-                            android:id="@+id/tvDetailConferenceDescription"
+                            android:id="@+id/tvDetailTorneoDescription"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Detalle de la conferencia"

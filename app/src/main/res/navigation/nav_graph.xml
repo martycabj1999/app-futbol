@@ -11,32 +11,32 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_homeFragment_to_scheduleFragment"
-            app:destination="@id/navScheduleFragment" />
+            android:id="@+id/action_homeFragment_to_torneoFragment"
+            app:destination="@id/navTorneoFragment" />
     </fragment>
     <fragment
-        android:id="@+id/navScheduleFragment"
-        android:name="com.platzi.conf.view.ui.fragments.ScheduleFragment"
-        android:label="fragment_schedule"
-        tools:layout="@layout/fragment_schedule" >
+        android:id="@+id/navTorneoFragment"
+        android:name="com.platzi.conf.view.ui.fragments.TorneoFragment"
+        android:label="fragment_torneo"
+        tools:layout="@layout/fragment_torneo" >
         <action
-            android:id="@+id/action_scheduleFragment_to_speakersFragment"
-            app:destination="@id/navSpeakersFragment" />
+            android:id="@+id/action_torneoFragment_to_teamsFragment"
+            app:destination="@id/navTeamsFragment" />
         <action
-            android:id="@+id/action_navScheduleFragment_to_scheduleDetailFragmentDialog"
-            app:destination="@id/scheduleDetailFragmentDialog" />
+            android:id="@+id/action_navTorneoFragment_to_torneoDetailFragmentDialog"
+            app:destination="@id/torneoDetailFragmentDialog" />
     </fragment>
     <fragment
-        android:id="@+id/navSpeakersFragment"
-        android:name="com.platzi.conf.view.ui.fragments.SpeakersFragment"
-        android:label="fragment_speakers"
-        tools:layout="@layout/fragment_speakers" >
+        android:id="@+id/navTeamsFragment"
+        android:name="com.platzi.conf.view.ui.fragments.TeamsFragment"
+        android:label="fragment_teams"
+        tools:layout="@layout/fragment_teams" >
         <action
-            android:id="@+id/action_speakersFragment_to_ubicationFragment"
+            android:id="@+id/action_teamsFragment_to_ubicationFragment"
             app:destination="@id/navMapFragment" />
         <action
-            android:id="@+id/action_navSpeakersFragment_to_speakersDetailFragmentDialog"
-            app:destination="@id/speakersDetailFragmentDialog" />
+            android:id="@+id/action_navTeamsFragment_to_teamsDetailFragmentDialog"
+            app:destination="@id/teamsDetailFragmentDialog" />
     </fragment>
     <fragment
         android:id="@+id/navMapFragment"
@@ -49,16 +49,16 @@
     </fragment>
 
     <dialog
-        android:id="@+id/speakersDetailFragmentDialog"
-        android:name="com.platzi.conf.view.ui.fragments.SpeakersDetailFragmentDialog"
-        android:label="SpeakerDetailFragmentDialog"
-        tools:layout="@layout/fragment_speakers_detail_dialog"/>
+        android:id="@+id/teamsDetailFragmentDialog"
+        android:name="com.platzi.conf.view.ui.fragments.TeamsDetailFragmentDialog"
+        android:label="TeamDetailFragmentDialog"
+        tools:layout="@layout/fragment_teams_detail_dialog"/>
 
     <dialog
-        android:id="@+id/scheduleDetailFragmentDialog"
-        android:name="com.platzi.conf.view.ui.fragments.ScheduleDetailDialogFragment"
-        android:label="ScheduleDetailFragmentDialog"
-        tools:layout="@layout/fragment_schedule_detail_dialog"/>
+        android:id="@+id/torneoDetailFragmentDialog"
+        android:name="com.platzi.conf.view.ui.fragments.TorneoDetailDialogFragment"
+        android:label="TorneoDetailFragmentDialog"
+        tools:layout="@layout/fragment_torneo_detail_dialog"/>
     <dialog
         android:id="@+id/ubicationDetailFragmentDialog"
         android:name="com.platzi.conf.view.ui.fragments.UbicationDetailDialogFragment"

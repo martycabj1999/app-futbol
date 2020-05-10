@@ -13,8 +13,8 @@
             android:layout_height="wrap_content">
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="@dimen/toolbarAlto"
-                android:src="@drawable/logo_platzi_conf"/>
+                android:layout_height="55dp"
+                android:src="@drawable/logo_superliga"/>
         </Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 

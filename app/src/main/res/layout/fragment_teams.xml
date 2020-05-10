@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.ui.fragments.SpeakersFragment">
+    tools:context=".view.ui.fragments.TeamsFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvSpeakers"
+        android:id="@+id/rvTeams"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

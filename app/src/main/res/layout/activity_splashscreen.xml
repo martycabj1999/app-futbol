@@ -10,8 +10,8 @@
     <ImageView
         android:id="@+id/ivLogoPlatziConf"
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/altoLogoPlatzi"
-        android:src="@drawable/logo_platzi_conf"
+        android:layout_height="150dp"
+        android:src="@drawable/logo_superliga"
         app:layout_constraintTop_toBottomOf="parent"
         app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintStart_toEndOf="parent"

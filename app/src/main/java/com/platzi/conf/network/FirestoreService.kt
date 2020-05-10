@@ -2,11 +2,11 @@ package com.platzi.conf.network
 
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.FirebaseFirestoreSettings
-import com.platzi.conf.model.Conference
-import com.platzi.conf.model.Speaker
+import com.platzi.conf.model.Torneo
+import com.platzi.conf.model.Team
 
-const val CONFERENCES_COLLECTION_NAME = "conferences"
-const val SPEAKERS_COLLECTION_NAME = "speakers"
+const val TORNEOS_COLLECTION_NAME = "torneos"
+const val TEAMS_COLLECTION_NAME = "teams"
 
 class FirestoreService {
     val firebaseFirestore = FirebaseFirestore.getInstance()
@@ -16,26 +16,26 @@ class FirestoreService {
         firebaseFirestore.firestoreSettings = settings
     }
 
-    fun getSpeakers(callback: Callback<List<Speaker>>) {
-        firebaseFirestore.collection(SPEAKERS_COLLECTION_NAME)
-            .orderBy("category")
+    fun getTeams(callback: Callback<List<Team>>) {
+        firebaseFirestore.collection(TEAMS_COLLECTION_NAME)
+            .orderBy("name")
             .get()
             .addOnSuccessListener { result ->
                 for (doc in result){
-                    val list = result.toObjects(Speaker::class.java)
+                    val list = result.toObjects(Team::class.java)
                     callback.onSuccess(list)
                     break
                 }
             }
     }
 
-    fun getSchedule(callback: Callback<List<Conference>>) {
-        firebaseFirestore.collection(CONFERENCES_COLLECTION_NAME)
-            .orderBy("datetime")
+    fun getTorneo(callback: Callback<List<Torneo>>) {
+        firebaseFirestore.collection(TORNEOS_COLLECTION_NAME)
+            .orderBy("puntos")
             .get()
             .addOnSuccessListener { result ->
                 for (doc in result){
-                    val list = result.toObjects(Conference::class.java)
+                    val list = result.toObjects(Torneo::class.java)
                     callback.onSuccess(list)
                     break
                 }

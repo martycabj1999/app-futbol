@@ -13,43 +13,43 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 
 import com.platzi.conf.R
-import com.platzi.conf.model.Speaker
-import com.platzi.conf.view.adapter.SpeakersAdapter
-import com.platzi.conf.view.adapter.SpeakersListener
-import com.platzi.conf.viewmodel.SpeakersViewModel
-import kotlinx.android.synthetic.main.fragment_speakers.*
+import com.platzi.conf.model.Team
+import com.platzi.conf.view.adapter.TeamsAdapter
+import com.platzi.conf.view.adapter.TeamsListener
+import com.platzi.conf.viewmodel.TeamsViewModel
+import kotlinx.android.synthetic.main.fragment_teams.*
 
 /**
  * A simple [Fragment] subclass.
  */
-class SpeakersFragment : Fragment() , SpeakersListener {
+class TeamsFragment : Fragment() , TeamsListener {
 
-    private lateinit var speakerAdapter: SpeakersAdapter
-    private lateinit var viewModel: SpeakersViewModel
+    private lateinit var teamAdapter: TeamsAdapter
+    private lateinit var viewModel: TeamsViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_speakers, container, false)
+        return inflater.inflate(R.layout.fragment_teams, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel = ViewModelProviders.of(this).get(SpeakersViewModel::class.java)
+        viewModel = ViewModelProviders.of(this).get(TeamsViewModel::class.java)
         viewModel.refresh()
 
-        speakerAdapter = SpeakersAdapter(this)
+        teamAdapter = TeamsAdapter(this)
 
-        rvSpeakers.apply {
+        rvTeams.apply {
             layoutManager = GridLayoutManager(context, 2)
-            adapter = speakerAdapter
+            adapter = teamAdapter
         }
         observeViewModel()
     }
 
     fun observeViewModel() {
-        viewModel.listSpeaker.observe(this, Observer<List<Speaker>> { speakers ->
-            speakers.let {
-                speakerAdapter.updateData(speakers)
+        viewModel.listTeam.observe(this, Observer<List<Team>> { teams ->
+            teams.let {
+                teamAdapter.updateData(teams)
             }
         })
 
@@ -59,9 +59,9 @@ class SpeakersFragment : Fragment() , SpeakersListener {
         })
     }
 
-    override fun onSpeakerClicked(speaker: Speaker, position: Int) {
-        var bundle = bundleOf("speaker" to speaker)
-        findNavController().navigate(R.id.speakersDetailFragmentDialog, bundle)
+    override fun onTeamClicked(team: Team, position: Int) {
+        var bundle = bundleOf("team" to team)
+        findNavController().navigate(R.id.teamsDetailFragmentDialog, bundle)
     }
 
 }

@@ -20,7 +20,7 @@
         Adiciona el atributo ID a cada elemento
         -->
         <ImageView
-            android:id="@+id/ivItemSpeakerImage"
+            android:id="@+id/ivItemTeamImage"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@mipmap/ic_launcher"
@@ -28,7 +28,7 @@
             android:layout_margin="10dp"
             android:layout_marginTop="10dp"/>
         <TextView
-            android:id="@+id/tvItemSpeakerName"
+            android:id="@+id/tvItemTeamName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Nombre Expositor"
@@ -37,7 +37,7 @@
             android:textSize="@dimen/tamanioTitulo"
             android:textColor="@color/colorPrimaryDark"/>
         <TextView
-            android:id="@+id/tvItemSpeakerWork"
+            android:id="@+id/tvItemTeamWork"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Trabajo Expositor"

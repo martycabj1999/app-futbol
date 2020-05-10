@@ -2,35 +2,36 @@ package com.platzi.conf.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.platzi.conf.model.Conference
+import com.platzi.conf.model.Team
 import com.platzi.conf.network.Callback
 import com.platzi.conf.network.FirestoreService
-import java.lang.Exception
 
-class ScheduleViewModel: ViewModel() {
+
+class TeamsViewModel: ViewModel() {
 
     val firestoreService = FirestoreService()
-    var listSchedule: MutableLiveData<List<Conference>> = MutableLiveData()
+    var listTeam: MutableLiveData<List<Team>> = MutableLiveData()
     var isLoading = MutableLiveData<Boolean>()
 
     fun refresh() {
-        getScheduleFromFirebase()
+        getTeamFromFirebase()
     }
 
-    fun getScheduleFromFirebase(){
-        firestoreService.getSchedule(object: Callback<List<Conference>> {
-            override fun onSuccess(result: List<Conference>?) {
-                listSchedule.postValue(result)
+    fun getTeamFromFirebase() {
+        firestoreService.getTeams(object : Callback<List<Team>> {
+            override fun onSuccess(result: List<Team>?) {
+                listTeam.postValue(result)
                 processFinished()
             }
 
             override fun onFailed(exception: Exception) {
                 processFinished()
+
             }
         })
     }
 
-    fun processFinished() {
+    private fun processFinished() {
         isLoading.value = true
     }
 

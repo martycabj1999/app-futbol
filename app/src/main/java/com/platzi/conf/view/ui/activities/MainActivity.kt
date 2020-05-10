@@ -6,8 +6,8 @@ import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
 import com.google.firebase.firestore.FirebaseFirestore
 import com.platzi.conf.R
-import com.platzi.conf.model.Conference
-import com.platzi.conf.model.Speaker
+import com.platzi.conf.model.Team
+import com.platzi.conf.model.Torneo
 import kotlinx.android.synthetic.main.activity_main.*
 import org.json.JSONArray
 import org.json.JSONObject
@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         setActionBar(findViewById(R.id.toolbarMain))
         configNav()
+
     }
 
     private fun configNav() {
