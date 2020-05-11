@@ -8,7 +8,7 @@
     android:background="@color/colorPrimaryDark">
 
     <ImageView
-        android:id="@+id/ivLogoPlatziConf"
+        android:id="@+id/ivLogoSuperLiga"
         android:layout_width="wrap_content"
         android:layout_height="150dp"
         android:src="@drawable/logo_superliga"

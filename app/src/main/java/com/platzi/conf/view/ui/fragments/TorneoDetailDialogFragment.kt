@@ -9,9 +9,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.DialogFragment
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 
 import com.platzi.conf.R
 import com.platzi.conf.model.Torneo
+import kotlinx.android.synthetic.main.fragment_teams_detail_dialog.*
 import kotlinx.android.synthetic.main.fragment_torneo_detail_dialog.*
 
 /**
@@ -39,11 +42,14 @@ class TorneoDetailDialogFragment : DialogFragment(){
         val torneo = arguments?.getSerializable("torneo") as Torneo
         toolbarTorneo.title = torneo.name
 
-        tvItemTorneoTituloConferencia.text = torneo.name
-        tvDetailTorneoHour.text = torneo.puntos
-        tvDetailTorneoSpeaker.text = torneo.website
-        tvDetailTorneoTag.text = torneo.promedio
-        tvDetailTorneoDescription.text = torneo.image
+        tvItemTorneoName.text = torneo.name
+        tvDetailTorneoPuntos.text = "Puntos: " + torneo.puntos
+        tvDetailTorneoWeb.text = "Sitio Web: " + torneo.website
+        tvDetailTorneoPromedio.text = "Promedio: " +  torneo.promedio
+        Glide.with(this)
+            .load(torneo.image)
+            .apply(RequestOptions.circleCropTransform())
+            .into(ivDetailTorneoImage)
     }
 
     override fun onStart() {

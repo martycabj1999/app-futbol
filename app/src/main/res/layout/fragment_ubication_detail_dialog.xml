@@ -26,7 +26,7 @@
                 <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="230dp"
-                        android:src="@drawable/platzi_conf_2"
+                        android:src="@drawable/afa_ubication"
                         android:scaleType="centerCrop"/>
 
                 <androidx.cardview.widget.CardView
@@ -44,7 +44,7 @@
                             android:id="@+id/tvDetailNombreLugar"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Lugar PlatziConf"
+                            android:text="Lugar Futbol"
                             android:textSize="25sp"
                             android:textStyle="bold"
                             android:textColor="@color/colorPrimary"

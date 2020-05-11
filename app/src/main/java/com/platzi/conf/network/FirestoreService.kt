@@ -31,7 +31,7 @@ class FirestoreService {
 
     fun getTorneo(callback: Callback<List<Torneo>>) {
         firebaseFirestore.collection(TORNEOS_COLLECTION_NAME)
-            .orderBy("puntos")
+            .orderBy("puntos" )
             .get()
             .addOnSuccessListener { result ->
                 for (doc in result){

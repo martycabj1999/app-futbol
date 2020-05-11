@@ -8,6 +8,6 @@ class Team: Serializable {
     lateinit var entrenador: String
     lateinit var fundación: String
     lateinit var apodos: String
-    lateinit var image: String
+    var image = ""
     lateinit var capacidad: String
 }

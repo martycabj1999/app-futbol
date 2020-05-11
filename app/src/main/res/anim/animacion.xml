@@ -6,13 +6,13 @@
         android:interpolator="@android:anim/accelerate_interpolator"
         android:duration="500"
         android:repeatMode="reverse"
-        android:repeatCount="4"/>
+        android:repeatCount="3"/>
     <scale
         android:duration="500"
         android:pivotX="50%"
         android:pivotY="50%"
         android:repeatMode="reverse"
-        android:repeatCount="4"
+        android:repeatCount="3"
         android:toXScale="110%"
         android:toYScale="110%"
         android:fromXScale="100%"

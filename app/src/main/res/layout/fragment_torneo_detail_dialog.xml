@@ -24,11 +24,12 @@
                 android:orientation="vertical">
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="200dp">
+                    android:layout_height="400dp">
                     <ImageView
+                        android:id="@+id/ivDetailTorneoImage"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/platzi_conf_2"
+                        android:src="@mipmap/ic_launcher_round"
                         android:scaleType="centerCrop"/>
                     <View
                         android:layout_width="match_parent"
@@ -36,7 +37,7 @@
                         android:background="@color/colorPrimary"
                         android:alpha="0.5"/>
                     <TextView
-                        android:id="@+id/tvItemTorneoTituloConferencia"
+                        android:id="@+id/tvItemTorneoName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Titulo de la conferencia"
@@ -60,8 +61,9 @@
                         android:orientation="vertical"
                         android:padding="10dp"
                         android:background="@drawable/shape_parrafo">
+
                         <TextView
-                            android:id="@+id/tvDetailTorneoHour"
+                            android:id="@+id/tvDetailTorneoPuntos"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="00:00"
@@ -70,7 +72,7 @@
                             android:gravity="center_horizontal"
                             android:layout_margin="5dp"/>
                         <TextView
-                            android:id="@+id/tvDetailTorneoSpeaker"
+                            android:id="@+id/tvDetailTorneoWeb"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Nombre Expositor"
@@ -80,7 +82,7 @@
                             android:gravity="center_horizontal"
                             android:layout_margin="5dp"/>
                         <TextView
-                            android:id="@+id/tvDetailTorneoTag"
+                            android:id="@+id/tvDetailTorneoPromedio"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Tag"
@@ -91,15 +93,6 @@
                             android:layout_margin="5dp"
                             android:background="@drawable/shape_topico"/>
 
-                        <TextView
-                            android:id="@+id/tvDetailTorneoDescription"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Detalle de la conferencia"
-                            android:textSize="15sp"
-                            android:textColor="@color/colorPrimary"
-                            android:gravity="center_horizontal"
-                            android:layout_margin="5dp"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 

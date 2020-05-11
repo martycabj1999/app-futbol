@@ -46,7 +46,7 @@ class TorneoFragment : Fragment(), TorneoListener {
     }
 
     fun observeViewModel() {
-        viewModel.listTorneo.observe(this, Observer<List<Torneo>> { torneo ->
+        viewModel.listTorneo.observe(this, Observer<List<Torneo>> { torneo  ->
             torneoAdapter.updateData(torneo)
         })
 
@@ -57,8 +57,12 @@ class TorneoFragment : Fragment(), TorneoListener {
     }
 
     override fun onTorneoClicked(torneo: Torneo, position: Int) {
-            val bundle = bundleOf("torneo" to torneo)
-            findNavController().navigate(R.id.torneoDetailFragmentDialog, bundle)
+        print("Torneo: ")
+        println(torneo)
+        println(torneo.name)
+
+        val bundle = bundleOf("torneo" to torneo)
+        findNavController().navigate(R.id.torneoDetailFragmentDialog, bundle)
     }
 
 

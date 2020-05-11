@@ -15,7 +15,7 @@ class SplashscreenActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splashscreen)
 
         val animacion = AnimationUtils.loadAnimation(this, R.anim.animacion)
-        ivLogoPlatziConf.startAnimation(animacion)
+        ivLogoSuperLiga.startAnimation(animacion)
 
         val intent = Intent(this, MainActivity::class.java)
 

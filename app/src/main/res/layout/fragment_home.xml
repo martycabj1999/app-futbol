@@ -28,7 +28,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/altoImageViewHome"
-                        android:src="@drawable/banner_platzi_conf"
+                        android:src="@drawable/info_1"
                         android:layout_marginTop="1dp"/>
                     <View
                         android:layout_width="match_parent"
@@ -37,7 +37,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/inicio_frag_tv_que_es"
+                        android:text="@string/inicio_frag_tv_que_pasa"
                         android:textStyle="bold"
                         android:textSize="@dimen/tamanioTitulo"
                         android:textColor="@color/colorPrimaryDark"
@@ -52,7 +52,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/inicio_frag_tv_que_es_resp"
+                        android:text="@string/inicio_frag_tv_que_pasa_resp"
                         android:textSize="@dimen/tamanioSubtitulo"
                         android:textColor="@color/colorPrimary"
                         android:layout_marginRight="@dimen/marginHomeSubtitulo"
@@ -77,8 +77,8 @@
                     android:background="@drawable/shape_parrafo">
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/altoImageViewHome"
-                        android:src="@drawable/platzi_conf_2"
+                        android:layout_height="200dp"
+                        android:src="@drawable/info_2"
                         android:scaleType="centerCrop"/>
                     <View
                         android:layout_width="match_parent"
@@ -87,7 +87,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/inicio_frag_tv_por_que"
+                        android:text="@string/inicio_frag_tv_campeon"
                         android:textStyle="bold"
                         android:textSize="@dimen/tamanioTitulo"
                         android:textColor="@color/colorPrimaryDark"
@@ -102,7 +102,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/inicio_frag_tv_por_que_resp"
+                        android:text="@string/inicio_frag_tv_campeon_resp"
                         android:textSize="@dimen/tamanioSubtitulo"
                         android:textColor="@color/colorPrimary"
                         android:layout_marginRight="@dimen/marginHomeSubtitulo"
@@ -128,8 +128,8 @@
                     android:background="@drawable/shape_parrafo">
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/altoImageViewHome"
-                        android:src="@drawable/platzi_conf_3"
+                        android:layout_height="200dp"
+                        android:src="@drawable/info_3"
                         android:scaleType="centerCrop"/>
                     <View
                         android:layout_width="match_parent"
@@ -138,7 +138,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/inicio_frag_tv_info"
+                        android:text="@string/inicio_frag_tv_promedios"
                         android:textStyle="bold"
                         android:textSize="@dimen/tamanioTitulo"
                         android:textColor="@color/colorPrimaryDark"
@@ -153,7 +153,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/inicio_frag_tv_info_resp"
+                        android:text="@string/inicio_frag_tv_promedios_resp"
                         android:textSize="@dimen/tamanioSubtitulo"
                         android:textColor="@color/colorPrimary"
                         android:layout_marginRight="@dimen/marginHomeSubtitulo"

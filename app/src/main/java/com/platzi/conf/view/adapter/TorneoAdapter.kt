@@ -11,8 +11,6 @@ import com.bumptech.glide.request.RequestOptions
 import com.platzi.conf.model.Torneo
 import com.platzi.conf.R
 import com.platzi.conf.view.ui.fragments.TorneoFragment
-import java.text.SimpleDateFormat
-import java.util.*
 import kotlin.collections.ArrayList
 
 class TorneoAdapter(val torneoListener: TorneoFragment) : RecyclerView.Adapter<TorneoAdapter.ViewHolder>() {
@@ -21,9 +19,9 @@ class TorneoAdapter(val torneoListener: TorneoFragment) : RecyclerView.Adapter<T
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_torneo, parent, false))
 
-    override fun getItemCount() = listTorneo.size
+    override fun getItemCount() = listTorneo.size;
 
-    override fun onBindViewHolder(holder: TorneoAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val torneo = listTorneo[position] as Torneo
 
         holder.tvTorneoName.text = torneo.name
