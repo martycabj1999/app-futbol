@@ -2,7 +2,8 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -71,16 +72,24 @@
                             android:textColor="@color/colorPrimary"
                             android:gravity="center_horizontal"
                             android:layout_margin="5dp"/>
-                        <TextView
-                            android:id="@+id/tvDetailTorneoWeb"
+
+                        <LinearLayout
+                            android:id="@+id/llTorneoWeb"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Nombre Expositor"
-                            android:textSize="25sp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorPrimary"
-                            android:gravity="center_horizontal"
-                            android:layout_margin="5dp"/>
+                            android:background="?selectableItemBackground"
+                            android:orientation="horizontal"
+                            android:padding="20dp">
+                            <TextView
+                                android:id="@+id/tvDetailTorneoWeb"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="Nombre Expositor"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="25sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
                         <TextView
                             android:id="@+id/tvDetailTorneoPromedio"
                             android:layout_width="wrap_content"

@@ -1,25 +1,29 @@
 package com.platzi.conf.view.ui.fragments
 
-
 import android.content.Intent
 import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.webkit.WebView
+import android.webkit.WebViewClient
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.DialogFragment
-
+import androidx.fragment.app.Fragment
 import com.platzi.conf.R
+import com.platzi.conf.model.Torneo
 import com.platzi.conf.model.Ubication
 import kotlinx.android.synthetic.main.fragment_ubication_detail_dialog.*
+
 
 /**
  * A simple [Fragment] subclass.
  */
 class UbicationDetailDialogFragment : DialogFragment() {
+
+    private  val BASE_URL = "https://www.afa.com.ar/"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,7 +47,6 @@ class UbicationDetailDialogFragment : DialogFragment() {
         }
 
         val ubication = Ubication()
-
         toolbarUbication.title = ubication.name
 
         tvDetailNombreLugar.text = ubication.name
@@ -60,6 +63,8 @@ class UbicationDetailDialogFragment : DialogFragment() {
         llSitioWeb.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse(ubication.website)
+            //webview.webViewClient = WebViewClient()
+            //webview.loadUrl("https://www.afa.com.ar/")
             startActivity(intent)
         }
 

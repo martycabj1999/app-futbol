@@ -8,4 +8,7 @@
     <string name="inicio_frag_tv_promedios">Asi quedaron los promedios de la Superliga: qué equipos se salvaron por la suspensión de los descensos</string>
     <string name="inicio_frag_tv_promedios_resp">Este martes, la Asociación del Fútbol Argentino hará oficial lo que Claudio Tapia ya confirmó en los medios: la suspensión de la temporada 2019-20 y, con ello, de los tres descensos que se definirían al final de la Copa Superliga, por la cual apenas llegó a disputarse la primera fecha. Así, los equipos que ocupaban la zona de pérdida de la categoría y los que estaban afuera por unas pocas milésimas podrán respirar.</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

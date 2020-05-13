@@ -55,7 +55,7 @@ class UbicationFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClic
         val centerMark = LatLng(ubication.latitude, ubication.longitude)
         val markerOptions = MarkerOptions()
         markerOptions.position(centerMark)
-        markerOptions.title("Platzi Conf 2019")
+        markerOptions.title("AFA")
 
         val bitmapDraw = context?.applicationContext?.let { ContextCompat.getDrawable(it, R.drawable.logo_afa) } as BitmapDrawable
         val smallMarker = Bitmap.createScaledBitmap(bitmapDraw.bitmap, 150, 150, false)
